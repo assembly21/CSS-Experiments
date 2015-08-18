@@ -1,0 +1,84 @@
+
+/* Changing the header's background color */
+
+@-webkit-keyframes featured {
+    0% {background-color: #1BAFE9;}
+    25% {background-color: #ED0918;}
+    50% {background-color: #FF8C00;}
+    75% {background-color: #109D59;}
+    100% {background-color: #1441F7;}
+}
+@-moz-keyframes featured {
+    0% {background-color: #1BAFE9;}
+    25% {background-color: #ED0918;}
+    50% {background-color: #FF8C00;}
+    75% {background-color: #109D59;}
+    100% {background-color: #1441F7;}
+}
+@-o-keyframes featured {
+    0% {background-color: #1BAFE9;}
+    25% {background-color: #ED0918;}
+    50% {background-color: #FF8C00;}
+    75% {background-color: #109D59;}
+    100% {background-color: #1441F7;}
+}
+@keyframes featured {
+    0% {background-color: #1BAFE9;}
+    25% {background-color: #ED0918;}
+    50% {background-color: #FF8C00;}
+    75% {background-color: #109D59;}
+    100% {background-color: #1441F7;}
+}
+
+/* Changing the text color so it remains visible through the animation */
+
+@-webkit-keyframes headline {
+    0% {color: #D7DADD;}
+    25% {color: #DDDEE3;}
+    50% {color: #E1E1E9;}
+    75% {color: #EDEFF4;}
+    100% {color: #F2F3F8;}
+}
+@-moz-keyframes headline {
+    0% {color: #D7DADD;}
+    25% {color: #DDDEE3;}
+    50% {color: #E1E1E9;}
+    75% {color: #EDEFF4;}
+    100% {color: #F2F3F8;}
+}
+@-o-keyframes headline {
+    0% {color: #D7DADD;}
+    25% {color: #DDDEE3;}
+    50% {color: #E1E1E9;}
+    75% {color: #EDEFF4;}
+    100% {color: #F2F3F8;}
+}
+@keyframes headline {
+    0% {color: #D7DADD;}
+    25% {color: #DDDEE3;}
+    50% {color: #E1E1E9;}
+    75% {color: #EDEFF4;}
+    100% {color: #F2F3F8;}
+}
+
+header {
+    height: 7em;
+    background-color: royalblue;
+    -webkit-animation: featured 30s infinite alternate;
+    -moz-animation: featured 30s infinite alternate;
+    -o-animation: featured 30s infinite alternate;
+    animation: featured 30s infinite alternate;
+
+}
+header p {
+    color: #abced4;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 25px 0 0 20px;
+    vertical-align: 50%;
+    -webkit-animation: headline 30s infinite alternate;
+    -moz-animation: headline 30s infinite alternate;
+    -o-animation: headline 30s infinite alternate;
+    animation: headline 30s infinite alternate;
+}
