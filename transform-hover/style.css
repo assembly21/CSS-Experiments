@@ -9,14 +9,14 @@ button {
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
-    width: 15em;
-    padding: 1.2em;
+    width: 12em;
+    padding: 1em;
     transition: .5s;
-    border: solid 3px black;
+    border: solid 2px black;
     border-radius: 5px;
     font: bold 1em 'Bree Serif';
     text-transform: uppercase;
-    text-decoration: none;
+    text-align: center;
     letter-spacing: 1px;
     color: rgb(0, 0, 0);
     background-color: #ffff00;
@@ -33,7 +33,7 @@ button:before {
     right: 130%;
     height: 100%;
     width: 130%;
-    background-color: black;
+    background-color: crimson;
     transform: skewX(-20deg);
     transition: inherit;
 }
