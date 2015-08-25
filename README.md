@@ -6,6 +6,8 @@ Animated colors in header: http://codepen.io/CarolinaSawney/pen/RPmoYx
 
 Animated image in header: http://codepen.io/CarolinaSawney/pen/LVvqEN
 
+Animated text fills: http://codepen.io/CarolinaSawney/pen/jPjVdd
+
 Clouds: http://codepen.io/CarolinaSawney/pen/WvVorE
 
 Fixed background layout: http://codepen.io/CarolinaSawney/pen/NqQYOm
