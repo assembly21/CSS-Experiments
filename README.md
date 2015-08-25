@@ -7,5 +7,6 @@ Animated image in header: http://codepen.io/CarolinaSawney/pen/LVvqEN
 Clouds: http://codepen.io/CarolinaSawney/pen/WvVorE
 Fixed background layout: http://codepen.io/CarolinaSawney/pen/NqQYOm
 Gradient: http://codepen.io/CarolinaSawney/pen/aOxQga
+Handwritten note: http://codepen.io/CarolinaSawney/pen/oXKqJo
 Kandinsky poster made with CSS: http://codepen.io/CarolinaSawney/pen/gpypMe
 Transform on hover: http://codepen.io/CarolinaSawney/pen/EjJeWG
