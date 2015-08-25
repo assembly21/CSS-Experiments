@@ -1,0 +1,26 @@
+figure {
+    overflow: hidden;
+    width: 30em;
+    height:20em;
+    margin: 7em auto;
+    background-color: orangered;
+}
+
+.image {
+    width: 35em;
+    height:20em;
+    background-image: url(https://images.unsplash.com/36/yJl7OB3sSpOdEIpHhZhd_DSC_1929_1.jpg?q=80&fm=jpg&s=a7aec4d645e7355fbaadd725e0db583c);
+    background-size: 100%;
+}
+
+figure .image {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+figure .image:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
