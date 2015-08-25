@@ -1,0 +1,56 @@
+
+/* Experimenting with animated texts */
+
+/* Main styles */
+
+body {
+    overflow: hidden;
+    background: #f6f5eb;
+    color: #FFF;
+}
+
+.illustrations {
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 10vmax/.8 'Alegreya Sans SC', sans-serif;
+    transform: skew(-10deg);
+}
+
+/* Clipped text */
+
+.clipped-text {
+    background-image: url(images/sunflowers-mendoza.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: 25% -75%;
+}
+
+/* Animating the background position */
+
+.animated-text-fill {
+    background-image: -webkit-linear-gradient(darkorange 50%, LightSeaGreen 50%);
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 100% 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes 2s linear infinite;
+}
+
+/* With minus the effect is the strips moves upwards, positive they move downwards. */
+
+@-webkit-keyframes stripes {
+    100% {
+        background-position: 20px -50px;
+    }
+}
+
+@keyframes stripes {
+    100% {
+        background-position: 20px -50px;
+    }
+}
+
+
