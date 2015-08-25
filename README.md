@@ -14,6 +14,8 @@ Gradient: http://codepen.io/CarolinaSawney/pen/aOxQga
 
 Handwritten note: http://codepen.io/CarolinaSawney/pen/oXKqJo
 
+Image scaling: http://codepen.io/CarolinaSawney/pen/VLNLLb
+
 Kandinsky poster made with CSS: http://codepen.io/CarolinaSawney/pen/gpypMe
 
 Transform on hover: http://codepen.io/CarolinaSawney/pen/EjJeWG
