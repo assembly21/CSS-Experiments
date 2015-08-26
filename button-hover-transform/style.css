@@ -1,0 +1,61 @@
+body {
+    padding: 7em;
+}
+
+/* Creaate a button that doesn't show all of the fake strip on hover and also makes it appear gradually */
+
+button {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 12em;
+    padding: 1em;
+    transition: .5s;
+    border: solid 2px black;
+    border-radius: 5px;
+    font: bold 1em 'Bree Serif';
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    background-color: #ffff00;
+}
+
+/* Create a fake strip that's positioned to the right of the button */
+
+button:before {
+    content: "";
+    position: absolute;
+    padding: 0.1em;
+    margin: 0 1em 0 0;
+    top: 0;
+    right: 130%;
+    height: 100%;
+    width: 130%;
+    background-color: crimson;
+    transform: skewX(-20deg);
+    transition: inherit;
+
+}
+
+/* Move the fake strip to the right on hover */
+
+button:hover:before {
+    right: -20%;
+}
+
+/* Make the text readable on hover */
+
+button:hover {
+    color: #eaeaea;
+}
+
+/* Push the text to the front on hover */
+
+button span {
+    position: relative;
+}
+
+
+
