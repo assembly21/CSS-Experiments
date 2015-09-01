@@ -1,6 +1,6 @@
 # CSS-Experiments
 
-Mini projects to introduce and practise advanced CSS concepts for the course Web Design: HTML and CSS @ Assembly 21 in London. 
+Mini projects to present and practise advanced CSS concepts. 
 
 Animated colors in header: http://codepen.io/CarolinaSawney/pen/RPmoYx
 
