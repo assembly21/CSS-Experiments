@@ -1,0 +1,245 @@
+/* In this version there's are new containers:
+illustration: the frame
+camera that includes button, and three other components: options inside, lens and central band.
+rectangle: the body of the camera that's the reference to position the resulting image */
+
+* {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+input {
+    display: none;
+}
+
+.illustration {
+    background: #42A8C7;
+    line-height: 1;
+    with: 30%;
+    height: 42em;
+    position: relative;
+}
+
+/* This was the content in the first version. Now it's camera so it includes the button */
+
+.camara {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+/* The rectangle gets the position of relative to create stacking context for the inner components */
+
+.rectangle {
+    width: 500px;
+    height: 280px;
+    position: relative;
+    background: #F7EED7;
+    border-radius: 25px;
+    box-shadow: 4px 4px 0px 1px #E6DECA, 6px 6px 3px 3px rgba(0, 0, 0, 0.28);
+    z-index: 1;
+}
+
+
+.mid, .band, .lens, .lens .sub-lens .small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#click:checked ~ .shot {
+    top: -20px;
+    height: 20px;
+}
+#click:checked ~ .photo {
+    transform: translate(-50%, 90%) rotate(15deg);
+    visibility: visible;
+    opacity: 1;
+}
+#click:checked ~ div .flash:before {
+    box-shadow: 1px 13px 32px 17px #EDFF10;
+    display: block;
+}
+
+.shot {
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    width: 100px;
+    height: 30px;
+    background: #fc4b0c;
+    border-radius: 10px 10px 0 0;
+    box-shadow: inset 2px 5px 0px #bdbebe;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* The three main components of the rectangle part of the camera are positioned absolutely. */
+
+.options {
+    width: 100%;
+    float: left;
+}
+.options > div {
+    float: left;
+}
+
+/* The option components are positioned relatively to create a new stacking context */
+
+.options .flash {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: radial-gradient(#c5c5c5 40%, #989898 48%, #d0d0d0 54%);
+    display: block;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.options .flash:before {
+    content: '';
+}
+
+/* The option components are positioned relatively to create a new stacking context */
+
+.options .slide {
+    width: 70px;
+    height: 30px;
+    background: #d9d9d9;
+    display: block;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.options .slide #button {
+    display: none;
+}
+.options .slide #button:checked ~ .btn {
+    background: #77756A;
+    left: 40px;
+}
+
+/* A button inside the slide has the position of absolute  */
+
+.options .slide .btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+    background: #86877D;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.options .slide .btn:active {
+    width: 38px;
+    background: #86877D;
+}
+
+
+/* This direct child of the rectangle also has position absolute */
+
+.band {
+    width: 100%;
+    height: 150px;
+    background: #d7d2d7;
+    border-top: 10px solid rgba(134, 135, 125, 0.49);
+    border-bottom: 10px solid #86877D;
+}
+
+/* The direct child of the rectangle also has position absolute */
+
+.lens {
+    width: 230px;
+    height: 230px;
+    padding: 20px;
+    background: #CAD6D8;
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 1px 4px 6px -1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* I changed this to position relative */
+
+.lens:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 50, 54, 0.06);
+    position: absolute;
+    top: 91px;
+    left: 76px;
+    transform: rotate(50deg);
+}
+
+/* I changed this to position relative */
+
+.lens .sub-lens {
+    position: relative;
+    top: 9px;
+    left: 5px;
+    width: 180px;
+    height: 180px;
+    background: #86877D;
+    border: 15px solid #9D8F95;
+    border-radius: 100%;
+}
+.lens .sub-lens .small {
+    width: 130px;
+    height: 130px;
+    background: #aaabab;
+    border: 25px solid  #9D8F95;
+    border-radius: 100%;
+}
+.lens .sub-lens .small:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100%;
+    display: block;
+    top: 8px;
+    left: 11px;
+}
+
+/* I changed this to position relative */
+
+.lens .sub-lens .small:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    top: 13px;
+    left: 35px;
+}
+
+/* This is positioned absolutely in relation to the rectangle */
+
+.photo {
+    width: 200px;
+    height: 230px;
+    border: 15px solid #fff;
+    border-bottom: 40px solid #fff;
+    position: absolute;
+    background: url(images/photo-in-a-photo.png) no-repeat center;
+    box-shadow: 4px 5px 0px rgba(168, 174, 182, 0.5);
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
+    transition-delay: 1s;
+    visibility: hidden;
+    opacity: 0;
+}

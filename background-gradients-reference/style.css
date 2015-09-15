@@ -1,0 +1,120 @@
+/* Choose to colors */
+
+.gradient {
+    float: left;
+    margin: 1em;
+    position: relative;
+    width: 15em;
+    height: 15em;
+}
+
+
+div h2{
+    position: absolute;
+    background-color: #3399CC;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    padding: .5em 0 0 .5em;
+    font-size: 1em;
+    width: 8em;
+    height: 3em;
+    display: inline-block;
+    top: 7.5em;
+    left: 0;
+}
+
+.linear {
+    background-image: linear-gradient(#67B8DE, #B4DCED);
+}
+
+/* Linear gradient to right.
+Possible values: to top, to bottom, to left*/
+
+.to-right {
+    background-image: linear-gradient(to right, #67B8DE, #B4DCED);
+}
+
+/* Using more colors */
+
+.multicolor {
+    background-image: linear-gradient(to right, #3399CC, #67B8DE, #91C9E8, #B4DCED, #E8F8FF);
+}
+
+/* Indicating ending side and corner for the gradient line */
+
+.corner {
+    background-image: linear-gradient(to bottom right, #3399CC, #67B8DE, #91C9E8, #B4DCED, #E8F8FF);
+}
+
+/* Using a color stop for one or more of the colors indicated with percentages */
+
+.color-stops {
+    background-image: linear-gradient(to right, #3399CC, #67B8DE 60%, #91C9E8, #B4DCED, #E8F8FF);
+}
+
+/* Divide 100% by the numbers of colors used, indicate color start and stop for the same tone for each one to create a strip of solid color */
+
+.same-color-stops {
+    background-image: linear-gradient(to right, #3399CC, #3399CC 20%, #67B8DE 20%, #67B8DE 40%, #91C9E8 40%, #91C9E8 60%, #B4DCED 60%, #B4DCED 80%, #E8F8FF 80%, #E8F8FF 100%);
+}
+
+.linear.repeating {
+    background-image: linear-gradient(#3399CC, #3399CC 20%, #67b8de 20%, #67B8DE 40%, #91C9E8 40%,  #91C9E8 60%, #B4DCED 60%, #B4DCED 80%, #E8F8FF, #E8F8FF 100%);
+}
+
+.angle {
+    background-image: linear-gradient(15deg, #3399cc, #3399cc 20%, #67b8de 20%, #67b8de 40%, #91c9e8 40%, #91C9E8 60%, #B4DCED 60%, #B4DCED 80%, #E8F8FF 80%, #E8F8FF 100%);
+}
+
+.background-image {
+    background-image: linear-gradient(to right, rgba(103,184,222,0), rgba(180,220,237,1)), url(https://images.unsplash.com/uploads/1412862685615b0212e3d/5fcb0a55?q=80&fm=jpg&s=0870e6c091f63abbbe7da183398f0f0a);
+}
+
+.linear.checked {
+    background-color: #c5cccb;
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 50px,
+    rgba(103, 184, 222, 0.25) 50px, rgba(103, 184, 222, 0.25) 56px, transparent 56px, transparent 63px,
+    rgba(103, 184, 222, 0.25) 63px, rgba(103, 184, 222, 0.25) 69px, transparent 69px, transparent 116px,
+    rgba(103, 184, 222, 0.25) 116px, rgba(103, 184, 222, 0.25) 166px),
+    repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(103, 184, 222, 0.25) 50px,
+            rgba(103, 184, 222, 0.25) 56px, transparent 56px, transparent 63px, rgba(103, 184, 222, 0.25) 63px,
+            rgba(103, 184, 222, 0.25) 69px, transparent 69px, transparent 116px, rgba(103, 184, 222, 0.25) 116px,
+            rgba(103, 184, 222, 0.25) 166px),
+    repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(145, 201, 232, 0.25) 5px,
+            rgba(51, 153, 204, 0.25) 10px),
+    repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(145, 201, 232, 0.25) 5px,
+            rgba(145, 201, 232, 0.25) 10px);
+}
+
+.radial.multicolor {
+    background-image: radial-gradient(#3399cc, #67B8DE, #91C9E8, #B4DCED, #E8F8FF);
+}
+
+/* The shape can be circular or ellipse and their options are: closest-side, farthest-corner */
+
+.radial.ellipse{
+    background-image: radial-gradient(ellipse closest-side, #3399CC, #67B8DE, #91C9E8, #B4DCED, #E8F8FF);
+}
+
+.radial.repeating{
+    background-image: radial-gradient(#3399CC, #3399CC 20%, #67B8DE 20%, #67B8DE 40%, #91C9E8 40%,  #91C9E8 60%, #B4DCED 60%, #B4DCED 80%, #E8F8FF, #E8F8FF 100%);
+}
+
+.radial.circle {
+    background:
+    repeating-radial-gradient(
+            circle at 0 0,
+            #91c9e8,
+            #3399cc 30px
+    );
+}
+
+.bizantine {
+    background-color:white;
+    background-image:
+    radial-gradient(#3399cc 9px, transparent 10px),
+    repeating-radial-gradient(#3399cc 0, #3399cc 4px, transparent 5px, transparent 20px, #3399cc 21px, #3399cc 25px, transparent 26px, transparent 50px);
+    background-size: 30px 30px, 90px 90px;
+    background-position: 0 0;
+
+}
