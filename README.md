@@ -2,23 +2,36 @@
 
 Mini projects to present and practise advanced CSS concepts. 
 
-Animated colors in header: http://codepen.io/CarolinaSawney/pen/RPmoYx
+Header: Animated Colours - http://codepen.io/CarolinaSawney/pen/RPmoYx
 
-Animated image in header: http://codepen.io/CarolinaSawney/pen/LVvqEN
+Header: Animated Image - http://codepen.io/CarolinaSawney/pen/LVvqEN
 
-Animated text fills: http://codepen.io/CarolinaSawney/pen/jPjVdd
+Text: Animated fills: http://codepen.io/CarolinaSawney/pen/jPjVdd
 
-Clouds: http://codepen.io/CarolinaSawney/pen/WvVorE
+Drawings: Clouds: http://codepen.io/CarolinaSawney/pen/WvVorE
 
-Fixed background layout: http://codepen.io/CarolinaSawney/pen/NqQYOm
+Layout: Fixed Background Image - http://codepen.io/CarolinaSawney/pen/NqQYOm
 
-Gradient: http://codepen.io/CarolinaSawney/pen/aOxQga
+Text: Gradient: http://codepen.io/CarolinaSawney/pen/aOxQga
 
-Handwritten note: http://codepen.io/CarolinaSawney/pen/oXKqJo
+Text: Handwritten note - http://codepen.io/CarolinaSawney/pen/oXKqJo
 
-Image scaling: http://codepen.io/CarolinaSawney/pen/VLNLLb
+Image: Scaling: http://codepen.io/CarolinaSawney/pen/VLNLLb
 
-Kandinsky poster made with CSS: http://codepen.io/CarolinaSawney/pen/gpypMe
+Poster: Kandinsky poster - http://codepen.io/CarolinaSawney/pen/gpypMe
 
-Transform on hover: http://codepen.io/CarolinaSawney/pen/EjJeWG
+---
 
+Buttons: Transform on hover - http://codepen.io/CarolinaSawney/pen/EjJeWG
+
+Backgrounds: Gradient Reference - http://codepen.io/CarolinaSawney/pen/wKMxvb
+
+Drawings: Sunrise - http://codepen.io/CarolinaSawney/pen/NGqwRb
+
+Drawings: Camera - http://codepen.io/CarolinaSawney/pen/BoyJgE
+
+Drawings: Bike - http://codepen.io/CarolinaSawney/pen/bVNwKZ
+
+Shapes: 3d Cube - http://codepen.io/CarolinaSawney/pen/eNaReg
+
+Shapes: 3d Cube with animated triangles -
